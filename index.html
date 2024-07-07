@@ -221,64 +221,78 @@
     <source src="assets/videos/registration.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <div class="container">
+  <div class="contents">
     <p class="header">До конца регистрации</p>
-    <p class="countdown">02:00:00</p>
+    <p id="countdown" class="countdown">02:00:00</p>
     <div class="event-details">
       <p class="event-duration">2 часа интенсива</p>
       <p class="event-datetime">12:00 8 июля — 19:00 11 июля 19.00 МСК</p>
     </div>
-    <script id="b08634ea4f00d4cab921a0c6b9f7684cb8347d72"
-            src="https://f2max.com/pl/lite/widget/script?id=1222142"></script>
-    <p class="note">Более 7 месяцев мы создавали AI продакшен, изучая индустрию и совершая ошибки.
-      Все наши знания мы вложили в этот мастер-класс. Мы уверены, что он принесёт вам очень много пользы и
-      вдохновения</p>
+    <div class="form">
+      <script id="b08634ea4f00d4cab921a0c6b9f7684cb8347d72"
+              src="https://f2max.com/pl/lite/widget/script?id=1222142"></script>
+    </div>
+    <!--    <p class="note">Более 7 месяцев мы создавали AI продакшен, изучая индустрию и совершая ошибки.-->
+    <!--      Все наши знания мы вложили в этот мастер-класс. Мы уверены, что он принесёт вам очень много пользы и-->
+    <!--      вдохновения</p>-->
   </div>
 </section>
 
-<section id="faq" class="faq-section">
+
+<section id="faq" class="faq">
   <h2>FAQ</h2>
-  <details class="faq-item">
-    <summary class="faq-question">Будет ли повтор мастер-класса?</summary>
-    <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f35eb22f777c36f77555634c89d73bd36a30f57356a5724ef99029785a674a02?apiKey=14fc8ca5fc63435f814c5ccdd7d22c10&"
-        alt="FAQ toggle" class="faq-toggle"/>
-  </details>
-  <details class="faq-item">
-    <summary class="faq-question">Когда пройдет мастер-класс?</summary>
-    <p>11 июля в 19.00 по Московскому времени</p>
-    <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/91993190f01291faae0a3fd4dd789aad46b003291cb9eeb4c7f6d668b8c5dc21?apiKey=14fc8ca5fc63435f814c5ccdd7d22c10&"
-        alt="FAQ toggle" class="faq-toggle"/>
-  </details>
-  <details class="faq-item">
-    <summary class="faq-question">Где будет проходить мастер-класс?</summary>
-    <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2a6cfb46e4f944597ec73f077492c4559d23361d8f059381a4305cc9037d27b9?apiKey=14fc8ca5fc63435f814c5ccdd7d22c10&"
-        alt="FAQ toggle" class="faq-toggle"/>
-  </details>
-  <details class="faq-item">
-    <summary class="faq-question">Куда придет ссылка?</summary>
-    <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b86be38bc7840a321cb0fd4a619fb010d30e2d0e1fe8d32fd4d5c77f9491c668?apiKey=14fc8ca5fc63435f814c5ccdd7d22c10&"
-        alt="FAQ toggle" class="faq-toggle"/>
-  </details>
+
+  <div class="faq-item">
+    <h3 class="question">Будет ли повтор мастер-класса?</h3>
+    <div class="answer-wrapper">
+      <p class="answer">
+        Мы очень постараемся сделать запись, но не обещаем, что её получится выгрузить. Поэтому лучше сразу настроиться
+        на то, что записи не будет.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="question">Когда пройдет мастер-класс?</h3>
+    <div class="answer-wrapper">
+      <p class="answer">11 июля в 19.00 по Московскому времени</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="question">Где будет проходить мастер-класс?</h3>
+    <div class="answer-wrapper">
+      <p class="answer">
+        Мастер-класс пройдет на платформе Bizon. Для входа потребуется email, номер телефона и имя, которое вы вводили
+        при регистрации
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="question">Куда придет ссылка?</h3>
+    <div class="answer-wrapper">
+      <p class="answer">
+        Ссылка придет на почту и в телеграм-канал вебинара
+      </p>
+    </div>
+  </div>
 </section>
 
-<footer class="footer">
-  <h2 class="footer-logo">f2max</h2>
-  <p class="footer-tagline">Creative AI content</p>
-  <hr class="footer-divider"/>
-  <div class="footer-content">
-    <nav class="footer-links">
-      <a href="#ai-guide" class="footer-link">Бесплатный гайд</a>
-      <a href="#speakers" class="footer-link">Спикеры</a>
-      <a href="#ai-guide" class="footer-link">Промо гайд</a>
-      <a href="#idea" class="footer-link">О мастер-классе</a>
-      <a href="#program" class="footer-link">Программа</a>
-      <a href="#faq" class="footer-link">FAQ</a>
+<footer>
+  <h2>f2max</h2>
+  <p class="tagline">Мастер-класс по AI-контенту</p>
+  <hr class="divider"/>
+  <div class="content">
+    <nav class="links">
+      <a href="#ai-guide" class="link">Бесплатный гайд</a>
+      <a href="#speakers" class="link">Спикеры</a>
+      <a href="#ai-guide" class="link">Промо гайд</a>
+      <a href="#idea" class="link">О мастер-классе</a>
+      <a href="#program" class="link">Программа</a>
+      <a href="#faq" class="link">FAQ</a>
     </nav>
-    <a href="#" class="footer-policy">Политика обработки персональных данных</a>
+    <a href="assets/docs/privacy_policy.docx" class="policy">Политика обработки персональных данных</a>
   </div>
 </footer>
 
