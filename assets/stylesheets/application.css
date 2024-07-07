@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Golos';
-    src: url('../fonts/Golos-UI_VF.woff2') format('woff2'),
-    url('../fonts/Golos-UI_VF.woff') format('woff');
+    src: url('../fonts/golos.woff2') format('woff2'),
+    url('../fonts/golos.woff') format('woff');
 }
 
 :root {
