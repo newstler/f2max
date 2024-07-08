@@ -414,12 +414,6 @@ body {
         justify-content: center;
         flex-direction: column;
 
-        .description {
-            margin-bottom: 30px;
-            width: 70%;
-            text-align: center;
-        }
-
         .row {
             gap: 20px;
             display: flex;
@@ -503,6 +497,14 @@ body {
             background-color: var(--color-primary);
             border-radius: 9px !important;
             margin-bottom: 30px;
+        }
+    }
+
+    .ai-guide, .idea {
+        .description {
+            margin-bottom: 30px;
+            width: 70%;
+            text-align: center;
         }
     }
 
