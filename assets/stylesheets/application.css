@@ -97,8 +97,6 @@ body {
                 }
 
                 .guide-icon {
-                    aspect-ratio: 1;
-                    object-fit: auto;
                     object-position: center;
                     width: 32px;
                 }
@@ -236,8 +234,6 @@ body {
                     margin-bottom: 20px;
 
                     .icon {
-                        aspect-ratio: 1;
-                        object-fit: auto;
                         object-position: center;
                         width: 72px;
                         margin: 0 10px 10px 0;
@@ -275,7 +271,7 @@ body {
                 margin-left: 20px;
             }
 
-            .text {
+            .description {
                 color: #0b85ee;
                 letter-spacing: -1.38px;
                 font: 400 46px/59px Golos, sans-serif;
@@ -325,8 +321,6 @@ body {
                 }
 
                 video {
-                    aspect-ratio: 1.96;
-                    object-fit: auto;
                     object-position: center;
                     width: 100%;
                     flex-grow: 1;
@@ -466,6 +460,11 @@ body {
 
     .idea {
         margin-bottom: 80px;
+
+        .description {
+            text-align: left;
+            width: 100%;
+        }
 
         .cta-button {
             vertical-align: middle;
@@ -609,8 +608,6 @@ body {
                     text-align: right;
 
                     .faq-icon {
-                        aspect-ratio: 1.04;
-                        object-fit: auto;
                         object-position: center;
                         width: 25px;
                         align-self: start;
@@ -729,7 +726,7 @@ body {
                     width: 100%;
                 }
 
-                .text {
+                .description {
                     max-width: 100%;
                     margin-top: 40px;
                     font-size: 40px;
@@ -748,35 +745,37 @@ body {
             max-width: 100%;
             margin-top: 40px;
 
-            .row {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 0px;
+            .speaker {
+                .row {
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 0px;
 
-                .col-left, .col-right {
-                    width: 100%;
-                }
+                    .col-left, .col-right {
+                        width: 100%;
+                    }
 
-                video {
-                    max-width: 100%;
-                    margin-top: 40px;
-                }
-
-                .info {
-                    max-width: 100%;
-                    margin-top: 40px;
-
-                    .bio {
+                    video {
                         max-width: 100%;
+                        margin-top: 40px;
+                    }
+
+                    .info {
+                        max-width: 100%;
+                        margin-top: 40px;
+
+                        .bio {
+                            max-width: 100%;
+                        }
                     }
                 }
-            }
 
-            .cta-button {
-                max-width: 100%;
-                font-size: 40px;
-                margin-top: 40px;
-                padding: 0 20px;
+                .cta-button {
+                    max-width: 100%;
+                    font-size: 40px;
+                    margin-top: 40px;
+                    padding: 0 20px;
+                }
             }
         }
 
