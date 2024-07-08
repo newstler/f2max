@@ -167,6 +167,18 @@ body {
                     line-height: 24.80px;
                     word-wrap: break-word
                 }
+
+                .cta-button {
+                    vertical-align: middle;
+                    padding: 20px 60px;
+                    font-size: 16px;
+                    color: var(--color-text);
+                    background-color: var(--color-background);
+                    border-radius: 9px !important;
+                    margin-top: 30px;
+                    width: 30%;
+                    align-self: center;
+                }
             }
         }
     }
