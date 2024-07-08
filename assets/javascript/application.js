@@ -1,5 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
+	function fixHangingPrepositions() {
+	    const prepositions = ['а', 'в', 'и', 'к', 'о', 'с', 'у', 'за', 'из', 'на', 'не', 'от', 'по', 'со', 'но', 'до', 'об', 'ко', 'во', 'при'];
+	    const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, td, th');
+
+	    elements.forEach(element => {
+	        let html = element.innerHTML;
+	        prepositions.forEach(prep => {
+	            const regex = new RegExp(`(^|\\s)(${prep})\\s`, 'gi');
+	            html = html.replace(regex, `$1$2&nbsp;`);
+	        });
+	        element.innerHTML = html;
+	    });
+	}
+
+	fixHangingPrepositions();
+
   const videos = document.querySelectorAll('video');
+
+  videos.forEach(function(video) {
+    video.addEventListener('ended', function() {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+  });
 
   function attemptPlay() {
     videos.forEach(video => {
@@ -38,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
     attemptPlay();
   });
 
-// Countdown timer code
+
+  // Countdown timer code
   function updateCountdown() {
     const countdownElement = document.getElementById('countdown');
 
