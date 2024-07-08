@@ -240,6 +240,7 @@ body {
                         object-fit: auto;
                         object-position: center;
                         width: 72px;
+                        margin: 0 10px 10px 0;
                     }
 
                     .description {
@@ -341,7 +342,10 @@ body {
                     letter-spacing: -0.72px;
 
                     .name {
-                        font: 32px/96% Golos, sans-serif;
+                        font: 600 32px/96% Golos, sans-serif;
+                        text-align: left;
+                        width: 100%;
+                        color: var(--color-text);
                     }
 
                     .handle {
@@ -439,8 +443,9 @@ body {
 
                     .description {
                         margin-top: 19px;
-                        width: unset;
                         font: 400 22px/28px Golos, sans-serif;
+                        text-align: left;
+                        width: 100%;
                     }
                 }
             }
@@ -453,9 +458,7 @@ body {
         padding-right: 0;
         margin-bottom: 80px;
 
-        img {
-            aspect-ratio: 2.94;
-            object-fit: auto;
+        video {
             object-position: center;
             width: 100%;
         }
@@ -489,10 +492,12 @@ body {
                     }
 
                     .cta-button {
-                        padding: 120px 32px 75px;
                         border: none;
                         background-color: var(--color-primary);
                         cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
