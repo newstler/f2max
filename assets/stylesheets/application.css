@@ -22,6 +22,9 @@ video::-webkit-media-controls-panel {
     opacity: 0 !important;
 }
 
+.mobile {
+    display: none;
+}
 
 body {
     font-family: var(--font-main), sans-serif;
@@ -134,6 +137,10 @@ body {
                 width: 100%;
                 max-width: 1096px;
 
+                .date {
+                    display: none;
+                }
+
                 .title {
                     text-align: center;
                     font-variant-numeric: lining-nums tabular-nums;
@@ -142,7 +149,7 @@ body {
                     font-family: Golos;
                     font-weight: 700;
                     line-height: 55.71px;
-                    word-wrap: break-word
+                    word-wrap: break-word;
                 }
 
                 .subtitle {
@@ -154,7 +161,8 @@ body {
                     font-family: Golos;
                     font-weight: 600;
                     line-height: 28.76px;
-                    word-wrap: break-word
+                    word-wrap: break-word;
+                    text-transform: lowercase;
                 }
 
                 .description {
@@ -694,6 +702,10 @@ body {
 }
 
 @media (max-width: 991px) {
+    .mobile {
+        display: unset;
+    }
+
     body {
         header {
             max-width: 100%;
@@ -760,15 +772,53 @@ body {
                 max-width: 100%;
                 margin-top: 40px;
                 padding: 0 20px;
+                /*height: 400px;*/
 
+                video {
+                    margin-top: 100px;
+                    padding: 0 20px;
+                }
 
                 .text-wrapper {
                     max-width: 100%;
-                    /*padding: 0 20px;*/
+                    line-height: 0.5;
+
+                    .date {
+                        order: 0;
+                        display: flex;
+                        color: var(--color-primary);
+                    }
 
                     .title {
+                        order: 1;
                         max-width: 100%;
-                        font-size: 40px;
+                        font-size: 28px;
+                        text-align: left;
+                        font-weight: 200;
+                    }
+
+                    .subtitle {
+                        order: 3;
+                        width: 100%;
+                        text-align: left;
+                        font-weight: 200;
+                        text-transform: unset;
+                        font-size: 18px;
+                        margin-top: 40px;
+                    }
+
+                    .description {
+                        order: 2;
+                        width: 100%;
+                        text-align: left;
+                        font-weight: 200;
+                        margin-top: 0;
+                    }
+
+                    .cta-button {
+                        order: 4;
+                        width: 100%;
+                        margin: 450px 0 50px;
                     }
                 }
             }
