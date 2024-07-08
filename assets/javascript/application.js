@@ -93,4 +93,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   setInterval(updateCountdown, 1000);
+
+  const menuButton = document.getElementById('menuButton');
+  const mobileMenu = document.getElementById('menu');
+
+  menuButton.addEventListener('click', () => {
+      if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+          mobileMenu.style.display = 'flex';
+          menuButton.classList.add('open');
+      } else {
+          mobileMenu.style.display = 'none';
+          menuButton.classList.remove('open');
+      }
+  });
 });
